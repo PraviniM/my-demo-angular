@@ -1,0 +1,22 @@
+<p>switch2 works!</p>
+<div class="box">
+<div class="container">
+<button class="btn" (click)="setbtn('red')">color1</button> &nbsp;
+<button class="btn2" (click)="setbtn('pink')">color2</button> &nbsp;
+<button class="btn3" (click)="setbtn('yellow')">color3</button>
+<div [ngSwitch]="List">
+<div *ngSwitchCase="'red'">
+<h2>This is Red Color</h2>
+</div>
+<div *ngSwitchCase="'pink'">
+<h3>This is pink Color</h3>
+</div>
+<div *ngSwitchCase="'yellow'">
+<h4>This is Yellow Color</h4>
+</div>
+<div *ngSwitchDefault>
+<h1>Other Default</h1>
+</div>
+</div>
+</div>
+</div>

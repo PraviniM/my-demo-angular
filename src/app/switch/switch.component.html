@@ -1,0 +1,16 @@
+<p>switch works!</p>
+<div class="container">
+<button class="btn btn-outline-primary mr=3" (click)="setmap('list')">ListView</button> &nbsp;
+<button class="btn btn-outline-info" (click)="setmap('grid')">GridView</button>
+<div [ngSwitch]="viewMap">
+<div *ngSwitchCase="'list'">
+    <h3>ListView</h3>
+</div>
+<div *ngSwitchCase="'grid'">
+<h3>GridView</h3>
+</div>
+<div *ngSwitchDefault> 
+<h3>OtherWise</h3>
+</div>
+</div>
+</div>

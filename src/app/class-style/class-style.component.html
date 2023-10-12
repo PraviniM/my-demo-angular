@@ -1,0 +1,8 @@
+<p>class-style works!</p>
+<div class="container"> 
+    <input type="button" value="Submit" [class.enable]="isActive"/>
+</div>
+<input  #name type="text" class="form-control" placeholder="Type Here....." (keyup.Enter)="ClickMe(name.value)" />
+<br>
+{{msg}}
+<!-- <button (click)="getInfo()"> GetInfo</button> -->

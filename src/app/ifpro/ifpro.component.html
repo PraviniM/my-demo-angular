@@ -1,0 +1,14 @@
+<p>ifpro works!</p>
+<div class="container">
+
+<br>
+<br>
+<div *ngIf="Show;  else elseBlock">
+<ng-template #show>
+    bloack HAs been created and block name is my block
+</ng-template>
+</div>
+<ng-template #elseBlock>
+    <div>No Block Has been Created yet</div>
+</ng-template>
+</div>

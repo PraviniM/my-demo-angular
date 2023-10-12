@@ -1,0 +1,14 @@
+input{
+    color: brown;
+    font-style: italic;
+    text-align: center;
+    font-size: large;
+}
+.box{
+    border: 2px;
+    border-color: black;
+    width: 450px;
+    height: auto;
+    text-align: center;
+    background-color: silver;
+}
